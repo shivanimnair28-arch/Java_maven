@@ -16,7 +16,7 @@ spec:
         - name: java-app
           image: shivanimnair28/java-app:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 8085
             
 
 ---
@@ -30,5 +30,5 @@ spec:
     app: java-app
   ports:
     - port: 80
-      targetPort: 8080
+      targetPort: 8085
       nodePort: 30008
